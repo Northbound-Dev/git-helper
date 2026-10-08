@@ -1,0 +1,38 @@
+name: Trivial Task
+description: A small, straightforward task suitable for newcomers
+title: "[Trivial] "
+labels: ["difficulty: trivial", "help wanted"]
+assignees: ''
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing! This is a Trivial task worth **1 point** in our contribution wave.
+        
+        Please review the [contributing guidelines](CONTRIBUTING.md) before starting.
+  - type: textarea
+    id: description
+    attributes:
+      label: Task Description
+      description: Clear description of what needs to be done
+      placeholder: Describe the trivial task here...
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Implementation Steps
+      description: Suggested steps to complete the task
+      placeholder: |
+        1. First step
+        2. Second step
+        3. etc.
+    validations:
+      required: false
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Contributor Agreement
+      options:
+        - label: I have read the contributing guidelines
+          required: true

@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "git-helper"
+version = "0.1.0"
+description = "A CLI tool that simplifies common Git workflows"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Your Name", email = "you@example.com"}
+]
+keywords = ["git", "cli", "workflow", "productivity"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/your-username/git-helper"
+Documentation = "https://github.com/your-username/git-helper#readme"
+Issues = "https://github.com/your-username/git-helper/issues"
+
+[project.scripts]
+git-helper = "git_helper.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
